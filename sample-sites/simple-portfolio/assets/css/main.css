@@ -1,0 +1,79 @@
+/* Resets */
+h1,
+h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Navigation Bar */
+header {
+    background-color: tomato;
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ol {
+    list-style: none;
+}
+
+nav ol li {
+    display: inline;
+    padding: 10px;
+    text-decoration: underline;
+    border: 1px solid grey;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+/* Top Section */
+.top {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 540px;
+    margin: 0;
+    text-align: center;
+    padding: 80px;
+}
+
+.top img {
+    border: 10px solid yellow;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.top h1 {
+    font-size: 4.4em;
+    color: white;
+}
+
+.top h3 {
+    font-size: 2.2em;
+    color: white;
+    padding: 20px;
+    font-weight: normal;
+}
+
+.top .about {
+    font-size: 1.2em;
+}
+
+/* Bottom Section */
+.bottom {
+    /* margin: 10px; */
+    padding-top: 10px;
+}
+
+.bottom img {
+    width: 300px;
+    height: 500px;
+    float: left;
+}
+
+.bottom aside {
+    padding-left: 15px;
+    border: 1px solid black;
+}
