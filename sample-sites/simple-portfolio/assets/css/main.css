@@ -1,18 +1,21 @@
 /* Resets */
-h1,
-h3 {
+* {
     margin: 0;
-    padding: 10px;
+    padding: 0;
+}
+
+h1,
+h3,
+p {
+    margin: 0;
+    padding: 1em;
 }
 
 /* Navigation Bar */
-header {
-    background-color: tomato;
-    margin: 0;
-}
-
 nav {
     text-align: right;
+    background-color: tomato;
+    padding: 10px;
 }
 
 nav ol {
@@ -21,7 +24,7 @@ nav ol {
 
 nav ol li {
     display: inline;
-    padding: 10px;
+    padding: 5px;
     text-decoration: underline;
     border: 1px solid grey;
     border-radius: 15%;
@@ -48,6 +51,7 @@ nav ol li {
 .top h1 {
     font-size: 4.4em;
     color: white;
+    padding: 10px;
 }
 
 .top h3 {
@@ -65,15 +69,37 @@ nav ol li {
 .bottom {
     /* margin: 10px; */
     padding-top: 10px;
+    margin: 0;
 }
 
-.bottom img {
-    width: 300px;
-    height: 500px;
+.bottom section {
     float: left;
+    margin: 0 1%;
+    width: 46%;
 }
 
-.bottom aside {
-    padding-left: 15px;
-    border: 1px solid black;
+.img-large {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
 }
