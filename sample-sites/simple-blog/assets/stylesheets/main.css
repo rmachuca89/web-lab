@@ -90,6 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -104,17 +105,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -122,6 +127,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -187,4 +193,46 @@ p {
 
 .hero {
   padding: 22px 80px 66px 80px;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Primary Header
+  ========================================
+*/
+
+.logo {
+  float: left;
+  border-top: 4px solid #648880;
+  padding: 40px 0 22px 0;
+}
+
+.primary-footer {
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+.primary-footer small {
+  float: left;
 }
